@@ -1,0 +1,45 @@
+{
+  "name": "react-native-interactive-button",
+  "version": "1.0.4",
+  "description": "A highly customizable and interactive button component for React Native applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npmhub90/react-native-interactive-button.git"
+  },
+  "keywords": [
+    "react-native",
+    "button",
+    "interactive",
+    "ui-component",
+    "customizable-button",
+    "mobile-ui",
+    "react-component",
+    "touchable",
+    "user-interface",
+    "react-native-ui",
+    "interactive-ui",
+    "custom-button",
+    "stylish-buttons",
+    "react-native-widgets",
+    "react-native-elements"
+  ],
+  "author": "Jerry Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/npmhub90/react-native-interactive-button/issues"
+  },
+  "homepage": "https://github.com/npmhub90/react-native-interactive-button#readme",
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "17.0.2",
+    "react-native": "^0.67.0",
+    "react-native-vector-icons": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
