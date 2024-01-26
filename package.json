@@ -1,6 +1,6 @@
 {
   "name": "react-native-interactive-button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A highly customizable and interactive button component for React Native applications",
   "main": "index.js",
   "scripts": {
@@ -34,12 +34,12 @@
   },
   "homepage": "https://github.com/npmhub90/react-native-interactive-button#readme",
   "dependencies": {
-    "prop-types": "^15.8.1",
-    "react": "17.0.2",
-    "react-native": "^0.67.0",
-    "react-native-vector-icons": "^7.0.0"
+  },
+  "peerDependencies": {
+      "react": ">=16.13.1",
+      "react-native": ">=0.63.2"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^26.0.0" 
   }
 }
