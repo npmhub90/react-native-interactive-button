@@ -9,18 +9,19 @@
 A flexible and feature-rich button component for React Native applications, offering a variety of customization options including icons, subtitles, loading state, and more.
 
 
-<table>
+<table style="width: 100%;">
   <tr>
-    <td>
-      <p align="center">Android</p>
-      <img src="./docs/docs/android_record.gif" alt="android_record gif" />
+    <td style="width: 50%; text-align: center;">
+      <p>Android</p>
+      <img src="./docs/android_record.gif" alt="android_record gif" style="max-width: 100%; height: auto;" />
     </td>
-    <td>
-      <p align="center">iOS</p>
-      <img src="./docs/docs/ios_record.gif" alt="ios_record gif" />
+    <td style="width: 50%; text-align: center;">
+      <p>iOS</p>
+      <img src="./docs/ios_record.gif" alt="ios_record gif" style="max-width: 100%; height: auto;" />
     </td>
   </tr>
 </table>
+
 
 
 ## Features
