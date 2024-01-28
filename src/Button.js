@@ -5,15 +5,19 @@ import PropTypes from 'prop-types';
 const Button = ({
   title,
   subtitle,
+  titleColor,
+  subtitleColor,
   onPress,
   style,
   loading,
   disabled,
   iconName,
   iconComponent: Icon,
+  iconColor,
   shadow,
   borderColor,
-  iconRight
+  iconRight,
+
 }) => {
   const scale = useRef(new Animated.Value(1)).current;
 
@@ -24,18 +28,21 @@ const Button = ({
     backgroundColor: disabled ? '#ccc' : (style.backgroundColor || '#007bff')
   };
 
+  const iconStyle = iconRight ? { marginLeft: 10 } : { marginRight: 10 };
+
+
   const content = (
     <Animated.View style={[styles.button, style, animatedStyle]}>
       {loading ? (
         <ActivityIndicator size="small" color="#fff" />
       ) : (
         <>
-          {!iconRight && Icon && <Icon name={iconName} size={20} color="#fff" />}
+          {!iconRight && Icon && <Icon name={iconName} size={20} color={iconColor} style={iconStyle}  />}
           <View style={styles.textContainer}>
-            <Text style={styles.title}>{title}</Text>
-            {subtitle && <Text style={styles.subtitle}>{subtitle}</Text>}
+             <Text style={[styles.title, { color: titleColor }]}>{title}</Text>
+            {subtitle && <Text style={[styles.subtitle, { color: subtitleColor }]}>{subtitle}</Text>}
           </View>
-          {iconRight && Icon && <Icon name={iconName} size={20} color="#fff" />}
+          {iconRight && Icon && <Icon name={iconName} size={20} color={iconColor} style={iconStyle}  />}
         </>
       )}
     </Animated.View>
@@ -87,12 +94,15 @@ const Button = ({
 Button.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
+  titleColor: PropTypes.string,
+  subtitleColor: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   style: PropTypes.object,
   loading: PropTypes.bool,
   disabled: PropTypes.bool,
   iconName: PropTypes.string,
   iconComponent: PropTypes.elementType,
+  iconColor: PropTypes.string,
   shadow: PropTypes.bool,
   borderColor: PropTypes.string,
   iconRight: PropTypes.bool
@@ -102,8 +112,11 @@ Button.defaultProps = {
   style: {},
   loading: false,
   disabled: false,
+  titleColor: 'white',
+  subtitleColor: 'white',
   iconName: '',
   iconComponent: null,
+  iconColor: '#fff',
   shadow: false,
   borderColor: '#007bff',
   iconRight: false
