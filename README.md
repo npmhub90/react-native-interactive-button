@@ -38,9 +38,9 @@ A flexible and feature-rich button component for React Native applications, offe
 To add the Customizable Button to your React Native project, run:
 
 ```bash
-npm install your-button-package-name
+npm install react-native-interactive-button
 # or
-yarn add your-button-package-name
+yarn add react-native-interactive-button
 ```
 
 ## Usage
@@ -49,25 +49,25 @@ Import the `Button` component and use it in your project:
 
 ```javascript
 import React from 'react';
-import Button from 'your-button-package-name';
+import Button from 'react-native-interactive-button';
 import Icon from 'react-native-vector-icons/FontAwesome'; // If using icons
 
 const App = () => {
   return (
     <Button
-      title="Press Me"
-      subtitle="More Info"
-      titleColor="black"
-      subtitleColor="gray"
-      onPress={() => console.log('Pressed')}
-      style={{ backgroundColor: 'blue', borderColor: 'white' }}
-      loading={false}
-      disabled={false}
-      iconName="rocket"
-      iconComponent={Icon}
-      iconColor="yellow"
-      iconRight={false}
-      shadow={true}
+        title="Press Me"
+        subtitle="More Info"
+        titleColor="white"
+        subtitleColor="gray"
+        onPress={() => console.log('Pressed')}
+        style={{backgroundColor: 'black'}}
+        loading={false}
+        disabled={false}
+        iconName="rocket"
+        iconComponent={Icon}
+        iconColor="white"
+        iconRight={false}
+        shadow={true}
     />
   );
 };
